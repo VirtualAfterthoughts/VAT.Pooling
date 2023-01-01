@@ -15,7 +15,7 @@ namespace VAT.Pooling {
         [Tooltip("Leave false if an item in the loot table should be placed when the level loads. If you set this to true, manually call Trigger to place the item.")]
         private bool _manualSpawning = false;
 
-        private void Start() {
+        private void Awake() {
             if (!_manualSpawning)
                 Trigger();
         }

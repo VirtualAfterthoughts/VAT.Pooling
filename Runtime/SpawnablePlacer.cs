@@ -20,7 +20,7 @@ namespace VAT.Pooling {
         [Tooltip("Leave false if this spawnable should be placed when the level loads. If you set this to true, manually call Trigger to place the spawnable.")]
         private bool _manualSpawning = false;
 
-        private void Start() {
+        private void Awake() {
             if (!_manualSpawning)
                 Trigger();
         }
